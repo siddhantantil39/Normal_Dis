@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph"
+        android:text="Mean:"
+        android:layout_margin="12dp"
+        android:id="@+id/meanhead"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/meanhead"
+        android:layout_below="@+id/graph"
+        android:id="@+id/mean"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mean"
+        android:layout_below="@+id/graph"
+        android:layout_margin="12dp"
+        android:text="St.Deviation"
+        android:paddingLeft="50dp"
+        android:id="@+id/stdhead"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/stdhead"
+        android:layout_below="@+id/graph"
+        android:id="@+id/std"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meanhead"
+        android:layout_margin="12dp"
+        android:text="X:"
+        android:id="@+id/Xhead"/>
+
+    <EditText
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Xhead"
+        android:layout_below="@+id/mean"
+        android:id="@+id/X"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Xhead"
+        android:layout_margin="12dp"
+        android:text="Z:"
+        android:id="@+id/Zhead"/>
+
+    <EditText
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Zhead"
+        android:layout_below="@+id/X"
+        android:id="@+id/Z"/>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Less than X"
+        android:layout_below="@+id/Zhead"
+        android:layout_margin="20dp"
+        android:id="@+id/lesser" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Greater than X"
+        android:layout_below="@+id/Zhead"
+        android:layout_toRightOf="@+id/lesser"
+        android:layout_margin="20dp"
+        android:id="@+id/greater"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lesser"
+        android:layout_margin="12dp"
+        android:text="Probabilty:"
+        android:gravity="center_horizontal"
+        android:id="@+id/Phead"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Phead"
+        android:layout_below="@+id/lesser"
+        android:id="@+id/P"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
