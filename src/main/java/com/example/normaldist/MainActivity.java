@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
                 LineGraphSeries<DataPoint> lineGraphSeries = new LineGraphSeries<DataPoint>();
                 BarGraphSeries barGraphSeries = new BarGraphSeries((DataPointInterface[])new DataPoint[0]);
                 double x = -3.0;
-                for (int i = 0; i < 600; ++i) {
-                    x = 0.01 + x;
+                for (int i = 0; i < 800; ++i) {
+                    x = 0.03 + x;
                     double y = Math.exp((double)(-x * x / 2.0)) / Math.sqrt((double)6.283185307179586);
                     lineGraphSeries.appendData(new DataPoint(x,y), true,2000);
                     if (!(x > -3) || !(x < xd)) continue;
@@ -106,8 +106,9 @@ public class MainActivity extends AppCompatActivity {
                 LineGraphSeries<DataPoint> lineGraphSeries = new LineGraphSeries<DataPoint>();
                 BarGraphSeries barGraphSeries = new BarGraphSeries((DataPointInterface[])new DataPoint[0]);
                 double x = -3.0;
-                for (int i = 0; i <600; ++i) {
-                    x = 0.01 + x;
+                for (int i = 0; i <800; ++i) {
+                    x = 0.03 + x;
+                    //reduced inter bar graph dist
                     double y = Math.exp((double)(-x * x / 2.0)) / Math.sqrt((double)6.283185307179586);
                     lineGraphSeries.appendData(new DataPoint(x,y), true,2000);
                     if (!(x > xd) || !(x < 3)) continue;
